@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RacletteCheeseSlice.png-fb6eaf61c3cccf75c0df7018ea53cc19.stex"
+path="res://.import/RacletteCheeseSlice.png-9100ca556e89cac60b71e09adb18c4c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gamejam-arts-2020/Assets/Textures/RacletteCheeseSlice.png"
-dest_files=[ "res://.import/RacletteCheeseSlice.png-fb6eaf61c3cccf75c0df7018ea53cc19.stex" ]
+source_file="res://Assets/Textures/RacletteCheeseSlice.png"
+dest_files=[ "res://.import/RacletteCheeseSlice.png-9100ca556e89cac60b71e09adb18c4c1.stex" ]
 
 [params]
 
