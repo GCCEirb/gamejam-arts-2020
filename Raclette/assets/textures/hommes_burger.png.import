@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HommesBurger.png-6c0ad8187c3a99bcb324b5368c35de66.stex"
+path="res://.import/hommes_burger.png-6a533fc5f064ea406bbc327591c7f589.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gamejam-arts-2020/Assets/Textures/HommesBurger.png"
-dest_files=[ "res://.import/HommesBurger.png-6c0ad8187c3a99bcb324b5368c35de66.stex" ]
+source_file="res://assets/textures/hommes_burger.png"
+dest_files=[ "res://.import/hommes_burger.png-6a533fc5f064ea406bbc327591c7f589.stex" ]
 
 [params]
 

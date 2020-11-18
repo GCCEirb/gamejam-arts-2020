@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WaterBoiled.png-d9d958eec2250ee7db6dfc352ac077f8.stex"
+path="res://.import/water_boiled.png-98ad9ff352ebccfb6e00c43754958a49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gamejam-arts-2020/Assets/Textures/WaterBoiled.png"
-dest_files=[ "res://.import/WaterBoiled.png-d9d958eec2250ee7db6dfc352ac077f8.stex" ]
+source_file="res://assets/textures/water_boiled.png"
+dest_files=[ "res://.import/water_boiled.png-98ad9ff352ebccfb6e00c43754958a49.stex" ]
 
 [params]
 

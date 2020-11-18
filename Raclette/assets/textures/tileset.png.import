@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TileSet.png-895a3d82c9bfdd62183bc4e247326ed6.stex"
+path="res://.import/tileset.png-6475f962844e1c8ba6124e025d777202.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gamejam-arts-2020/Assets/Textures/TileSet.png"
-dest_files=[ "res://.import/TileSet.png-895a3d82c9bfdd62183bc4e247326ed6.stex" ]
+source_file="res://assets/textures/tileset.png"
+dest_files=[ "res://.import/tileset.png-6475f962844e1c8ba6124e025d777202.stex" ]
 
 [params]
 
