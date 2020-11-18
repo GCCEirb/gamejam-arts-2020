@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RacletteCheeseSliceAnimations.png-371ec790406513f2a9e864cdbd95207b.stex"
+path="res://.import/raclette_cheese_slice_animations.png-1405085d8b6f6cfa67f34dd358996cbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/RacletteCheeseSliceAnimations.png"
-dest_files=[ "res://.import/RacletteCheeseSliceAnimations.png-371ec790406513f2a9e864cdbd95207b.stex" ]
+source_file="res://assets/textures/raclette_cheese_slice_animations.png"
+dest_files=[ "res://.import/raclette_cheese_slice_animations.png-1405085d8b6f6cfa67f34dd358996cbc.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HommesBurgerAnimations.png-244ea8a760028ab3eab61fc25d73fb14.stex"
+path="res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/HommesBurgerAnimations.png"
-dest_files=[ "res://.import/HommesBurgerAnimations.png-244ea8a760028ab3eab61fc25d73fb14.stex" ]
+source_file="res://assets/textures/hommes_burger_animations.png"
+dest_files=[ "res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex" ]
 
 [params]
 
