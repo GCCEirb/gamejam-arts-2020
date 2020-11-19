@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://characters/enemies/Anna Na.gd" type="Script" id=1]
+[ext_resource path="res://characters/enemies/anna.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 160.609
+height = 236.141
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 559.64, 176.986 )
+
+[node name="Anna" type="KinematicBody2D"]
+collision_layer = 2
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.5874, -296.844 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.96735, -283.106 )
+shape = SubResource( 1 )
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2( 5.73938, -186.147 )
+shape = SubResource( 2 )
+
+[node name="CooldownTimer" type="Timer" parent="."]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_DetectionArea_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_DetectionArea_body_exited"]
