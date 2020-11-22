@@ -320,27 +320,28 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 
 [node name="CheeseBlob" type="AnimatedSprite" parent="."]
-position = Vector2( 515, 284 )
+position = Vector2( 254.785, 206.218 )
 frames = SubResource( 5 )
 animation = "Walking"
-frame = 2
 playing = true
 
 [node name="HommeBurger" type="AnimatedSprite" parent="."]
-position = Vector2( 716.895, 316.24 )
+position = Vector2( 253.033, 273.814 )
 frames = SubResource( 18 )
 animation = "Walking"
-frame = 1
+frame = 3
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
 position = Vector2( 296.081, 298.601 )
 frames = SubResource( 43 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="Water" type="AnimatedSprite" parent="."]
-position = Vector2( 564.445, 405.695 )
+position = Vector2( 809.204, 432.873 )
 frames = SubResource( 60 )
-frame = 15
+frame = 1
 playing = true
+offset = Vector2( 0, 1 )
