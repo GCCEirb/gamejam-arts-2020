@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hommes_burger_animations.png-47213d40904df6fa2abc1e333ba85a46.stex"
+path="res://.import/raclette_cheese_blob_animations.png-aff6cf28559cb4234721db877234c078.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/hommes_burger_animations.png"
-dest_files=[ "res://.import/hommes_burger_animations.png-47213d40904df6fa2abc1e333ba85a46.stex" ]
+source_file="res://Assets/textures/raclette_cheese_blob_animations.png"
+dest_files=[ "res://.import/raclette_cheese_blob_animations.png-aff6cf28559cb4234721db877234c078.stex" ]
 
 [params]
 
