@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Assets/textures/raclette_cheese_blob_animations.png" type="Texture" id=1]
 [ext_resource path="res://Assets/textures/hommes_burger_animations.png" type="Texture" id=2]
@@ -9,9 +9,11 @@
 [ext_resource path="res://Assets/textures/tileset.png" type="Texture" id=7]
 [ext_resource path="res://Assets/textures/fakeoutside.png" type="Texture" id=8]
 [ext_resource path="res://Assets/shaders/FakeOutsideWindow.shader" type="Shader" id=9]
+[ext_resource path="res://scripts/FakeOutsideWindow.gd" type="Script" id=10]
 
 [sub_resource type="ShaderMaterial" id=71]
 shader = ExtResource( 9 )
+shader_param/viewDir = null
 
 [sub_resource type="Shader" id=68]
 
@@ -613,6 +615,10 @@ animations = [ {
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 512, 300 )
+current = true
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -637,9 +643,11 @@ margin_bottom = 192.0
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 2
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+m_currentCameraPath = "/root/Node2D/Camera2D"
 
 [node name="LevelWalls" type="TileMap" parent="."]
 tile_set = SubResource( 65 )
@@ -651,15 +659,15 @@ position = Vector2( 448, 272 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 5 )
 animation = "Walking"
-frame = 3
+frame = 1
 playing = true
 
 [node name="HommeBurger" type="AnimatedSprite" parent="."]
-position = Vector2( 816, 464 )
+position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 18 )
 animation = "Walking"
-frame = 2
+frame = 4
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -667,15 +675,15 @@ position = Vector2( 472, 568 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 43 )
 animation = "Idle"
-frame = 1
+frame = 3
 playing = true
 
 [node name="Water" type="AnimatedSprite" parent="."]
 material = SubResource( 62 )
-position = Vector2( 512.98, 574.062 )
+position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 60 )
-frame = 1
+frame = 6
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )
