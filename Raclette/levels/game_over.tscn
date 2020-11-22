@@ -1,0 +1,137 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/fonts/quicksand-variable-font-wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://levels/game_over.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 52
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Hider:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 45.2548 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "start"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Hider:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+title_screen_path = "res://levels/home.tscn"
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -136.0
+margin_top = 66.0
+margin_right = 136.0
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Game Over"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -118.5
+margin_top = -64.0
+margin_right = 118.5
+margin_bottom = 64.0
+custom_constants/separation = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retry" type="Button" parent="VBoxContainer"]
+margin_right = 237.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.196078, 0.917647, 0.258824, 1 )
+text = "Try again"
+
+[node name="TitleScreen" type="Button" parent="VBoxContainer"]
+margin_top = 46.0
+margin_right = 237.0
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.223529, 0.670588, 0.670588, 1 )
+text = "Return to title screen"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+margin_top = 92.0
+margin_right = 237.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.937255, 0.462745, 0.0823529, 1 )
+text = "Quit"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "start"
+anims/fade_in = SubResource( 3 )
+anims/start = SubResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hider" type="ColorRect" parent="CanvasLayer"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/TitleScreen" to="." method="_on_TitleScreen_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
