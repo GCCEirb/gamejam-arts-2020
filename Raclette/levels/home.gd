@@ -26,5 +26,5 @@ func _on_Quit_pressed() -> void:
 
 func _get_configuration_warning() -> String:
 	if not new_game_path:
-		return "The new game scene path must not be empty"
+		return ErrorMessages.get_message("The new game scene path", ErrorMessages.Warning.SHOULD_NOT_BE_EMPTY)
 	return ""
