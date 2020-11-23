@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex"
+path="res://.import/bricks_grey_scale.png-722ac4aa6a85d14c07dbed0f6bdf5924.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/hommes_burger_animations.png"
-dest_files=[ "res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex" ]
+source_file="res://assets/textures/bricks_grey_scale.png"
+dest_files=[ "res://.import/bricks_grey_scale.png-722ac4aa6a85d14c07dbed0f6bdf5924.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fakeoutside.png-d64f46fbe94fba8b4cf5927fc3385497.stex"
+path="res://.import/fakeoutside.png-535eb5358b428c07d868c20ec5bf286b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/textures/fakeoutside.png"
-dest_files=[ "res://.import/fakeoutside.png-d64f46fbe94fba8b4cf5927fc3385497.stex" ]
+source_file="res://assets/textures/fakeoutside.png"
+dest_files=[ "res://.import/fakeoutside.png-535eb5358b428c07d868c20ec5bf286b.stex" ]
 
 [params]
 

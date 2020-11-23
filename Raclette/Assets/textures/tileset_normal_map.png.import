@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex"
+path="res://.import/tileset_normal_map.png-9263005e469401cbac7193ec6a153e95.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/hommes_burger_animations.png"
-dest_files=[ "res://.import/hommes_burger_animations.png-395cb99bab6784f9cc2f2c427f0bbebf.stex" ]
+source_file="res://assets/textures/tileset_normal_map.png"
+dest_files=[ "res://.import/tileset_normal_map.png-9263005e469401cbac7193ec6a153e95.stex" ]
 
 [params]
 
@@ -18,17 +18,17 @@ compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=0
+compress/normal_map=2
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
-process/fix_alpha_border=true
+flags/srgb=0
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
