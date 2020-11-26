@@ -33,6 +33,7 @@ uniform float deformScale: hint_range(0., 1.);
 uniform float deformSpeed: hint_range(0., 1.);
 uniform vec4 colorDepth: hint_color = vec4(1.);
 uniform vec4 colorSurface: hint_color = vec4(1.);
+uniform float flowFreq: hint_range(0., 4.);
 // Fragment Shader
 
 float remap01(float x, float m_, float _m)
@@ -76,14 +77,15 @@ void flowmap(
 
 void fragment()
 {
+	vec2 uvFlow = SCREEN_UV; uvFlow.y = 1.-uvFlow.y;
 	float height = percentHeight;
 	float alpha = remap01(UV.y, height, 1.);
 	
 	float cT = cos(0.1*TIME), sT = sin(deformSpeed*TIME);
 	vec2 flowAscension = vec2(cT, deformSpeed*TIME);
 	
-	vec2 baseNoise = -1.+2.*texture(sNoise,UV+flowAscension).rg;
-	vec4 bubblesTex = alpha*(-1.+2.*texture(NORMAL_TEXTURE, UV+flowAscension).rgba);
+	vec2 baseNoise = -1.+2.*texture(sNoise,flowFreq*(uvFlow+flowAscension)).rg;
+	vec4 bubblesTex = alpha*(-1.+2.*texture(NORMAL_TEXTURE, flowFreq*(uvFlow+flowAscension)).rgba);
 	
 	float blend_factor;
 	vec2 ouv1, ouv2;

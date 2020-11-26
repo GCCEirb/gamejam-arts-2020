@@ -663,10 +663,11 @@ noise = SubResource( 65 )
 shader = ExtResource( 17 )
 shader_param/noiseAmplitude = 0.1
 shader_param/percentHeight = 0.269
-shader_param/deformScale = 0.263
-shader_param/deformSpeed = 0.345
+shader_param/deformScale = 0.135
+shader_param/deformSpeed = 0.518
 shader_param/colorDepth = Color( 0.152941, 0.556863, 0.635294, 1 )
 shader_param/colorSurface = Color( 0.494118, 0.811765, 0.980392, 1 )
+shader_param/flowFreq = 3.308
 shader_param/sNoise = SubResource( 66 )
 
 [node name="Node2D" type="Node2D"]
@@ -723,6 +724,7 @@ position = Vector2( 448, 272 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 9 )
 animation = "Walking"
+frame = 3
 playing = true
 
 [node name="HommeBurger" type="AnimatedSprite" parent="."]
@@ -730,7 +732,7 @@ position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 26 )
 animation = "Walking"
-frame = 7
+frame = 6
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -738,7 +740,7 @@ position = Vector2( 472, 568 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 43 )
 animation = "Idle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Water" type="AnimatedSprite" parent="."]
@@ -746,14 +748,14 @@ material = SubResource( 46 )
 position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 63 )
-frame = 15
+frame = 14
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )
 
 [node name="ProcWater" type="Sprite" parent="."]
 material = SubResource( 64 )
-position = Vector2( 560, 488 )
-scale = Vector2( 6.625, 4.75 )
+position = Vector2( 544, 432 )
+scale = Vector2( 8.50781, 5.75 )
 texture = ExtResource( 18 )
 normal_map = ExtResource( 19 )
