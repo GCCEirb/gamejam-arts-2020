@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://scripts/tileset.gd" type="Script" id=1]
 [ext_resource path="res://scripts/texture_rect_lighting.gd" type="Script" id=2]
@@ -16,6 +16,9 @@
 [ext_resource path="res://Assets/textures/hommes_burger_animations.png" type="Texture" id=14]
 [ext_resource path="res://Assets/textures/raclette_cheese_slice_animations.png" type="Texture" id=15]
 [ext_resource path="res://Assets/textures/fakeoutside.png" type="Texture" id=16]
+[ext_resource path="res://assets/shaders/water_procedural.shader" type="Shader" id=17]
+[ext_resource path="res://assets/textures/tile_top_greyscale.png" type="Texture" id=18]
+[ext_resource path="res://assets/textures/bubbles.png" type="Texture" id=19]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 5 )
@@ -357,62 +360,62 @@ animations = [ {
 [sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 0, 512, 512 )
+region = Rect2( 0, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 0, 512, 512 )
+region = Rect2( 512, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 0, 512, 512 )
+region = Rect2( 1024, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 0, 512, 512 )
+region = Rect2( 1536, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 512, 512, 512 )
+region = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 512, 512, 512 )
+region = Rect2( 512, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 512, 512, 512 )
+region = Rect2( 1024, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 512, 512, 512 )
+region = Rect2( 1536, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 1024, 512, 512 )
+region = Rect2( 0, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 1024, 512, 512 )
+region = Rect2( 512, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 1024, 512, 512 )
+region = Rect2( 1024, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 1024, 512, 512 )
+region = Rect2( 1536, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=22]
 flags = 4
@@ -436,14 +439,14 @@ region = Rect2( 1536, 1536, 512, 512 )
 
 [sub_resource type="SpriteFrames" id=26]
 animations = [ {
-"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
-"loop": true,
-"name": "Walking",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
 "loop": false,
 "name": "Attack",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "Walking",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
@@ -455,62 +458,62 @@ animations = [ {
 [sub_resource type="AtlasTexture" id=27]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 1024, 512, 512 )
+region = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=28]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 1024, 512, 512 )
+region = Rect2( 512, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=29]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 1024, 512, 512 )
+region = Rect2( 1024, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=30]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 1024, 512, 512 )
+region = Rect2( 1536, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=31]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 0, 512, 512 )
+region = Rect2( 0, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=32]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 0, 512, 512 )
+region = Rect2( 512, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 0, 512, 512 )
+region = Rect2( 1024, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 0, 512, 512 )
+region = Rect2( 1536, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 512, 512, 512 )
+region = Rect2( 0, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=36]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 512, 512, 512 )
+region = Rect2( 512, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=37]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 512, 512, 512 )
+region = Rect2( 1024, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=38]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 512, 512, 512 )
+region = Rect2( 1536, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=39]
 flags = 4
@@ -534,14 +537,14 @@ region = Rect2( 1536, 1536, 512, 512 )
 
 [sub_resource type="SpriteFrames" id=43]
 animations = [ {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
-"loop": false,
-"name": "Jumping",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
+"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
 "loop": true,
 "name": "Walking",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
+"loop": false,
+"name": "Jumping",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
@@ -650,6 +653,22 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="OpenSimplexNoise" id=65]
+
+[sub_resource type="NoiseTexture" id=66]
+seamless = true
+noise = SubResource( 65 )
+
+[sub_resource type="ShaderMaterial" id=64]
+shader = ExtResource( 17 )
+shader_param/noiseAmplitude = 0.1
+shader_param/percentHeight = 0.269
+shader_param/deformScale = 0.263
+shader_param/deformSpeed = 0.345
+shader_param/colorDepth = Color( 0.152941, 0.556863, 0.635294, 1 )
+shader_param/colorSurface = Color( 0.494118, 0.811765, 0.980392, 1 )
+shader_param/sNoise = SubResource( 66 )
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -711,7 +730,7 @@ position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 26 )
 animation = "Walking"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -727,7 +746,14 @@ material = SubResource( 46 )
 position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 63 )
-frame = 7
+frame = 15
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )
+
+[node name="ProcWater" type="Sprite" parent="."]
+material = SubResource( 64 )
+position = Vector2( 560, 488 )
+scale = Vector2( 6.625, 4.75 )
+texture = ExtResource( 18 )
+normal_map = ExtResource( 19 )
