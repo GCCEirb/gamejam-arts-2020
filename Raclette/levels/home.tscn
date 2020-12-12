@@ -1,8 +1,16 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/fonts/quicksand-variable-font-wght.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://levels/home.gd" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Assets/textures/menu_title.png" type="Texture" id=4]
+[ext_resource path="res://Assets/textures/displacement_map.png" type="Texture" id=5]
+[ext_resource path="res://Assets/shaders/FlowMap.shader" type="Shader" id=6]
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 6 )
+shader_param/cColor = Color( 1, 0.956863, 0.756863, 1 )
+shader_param/sFlowMap = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -33,6 +41,12 @@ margin_right = 1024.0
 margin_bottom = 600.0
 texture = ExtResource( 3 )
 expand = true
+
+[node name="Title" type="TextureRect" parent="."]
+material = SubResource( 6 )
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 425.0
