@@ -4,25 +4,25 @@
 [ext_resource path="res://assets/textures/bubbles.png" type="Texture" id=2]
 [ext_resource path="res://assets/textures/tile_top_greyscale.png" type="Texture" id=3]
 
-[sub_resource type="OpenSimplexNoise" id=64]
+[sub_resource type="OpenSimplexNoise" id=1]
 
-[sub_resource type="NoiseTexture" id=65]
+[sub_resource type="NoiseTexture" id=2]
 seamless = true
-noise = SubResource( 64 )
+noise = SubResource( 1 )
 
-[sub_resource type="ShaderMaterial" id=66]
+[sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 1 )
 shader_param/noiseAmplitude = 0.1
-shader_param/percentHeight = 0.115
-shader_param/deformScale = 0.135
-shader_param/deformSpeed = 0.518
+shader_param/percentHeight = 0.141
+shader_param/deformScale = 0.148
+shader_param/deformSpeed = 0.159
 shader_param/colorDepth = Color( 0.152941, 0.556863, 0.635294, 1 )
 shader_param/colorSurface = Color( 0.494118, 0.811765, 0.980392, 1 )
-shader_param/flowFreq = 4.0
-shader_param/sNoise = SubResource( 65 )
+shader_param/flowFreq = 7.385
+shader_param/sNoise = SubResource( 2 )
 
 [node name="ProcWater" type="Sprite"]
-material = SubResource( 66 )
+material = SubResource( 3 )
 position = Vector2( 511.598, 576.559 )
 scale = Vector2( 3.72025, 1.98082 )
 texture = ExtResource( 3 )

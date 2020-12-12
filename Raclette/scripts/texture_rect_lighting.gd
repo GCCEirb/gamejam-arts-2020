@@ -10,8 +10,8 @@ func _ready():
 	_totalTime = 0.0
 
 func _process(delta):
-	_lightDir.x = cos(_totalTime)
-	_lightDir.y = sin(_totalTime)
+	_lightDir.x = 0.2*cos(_totalTime)
+	_lightDir.y = 1.0
 	_lightDir.z = 0.5
 	_lightDir = _lightDir.normalized()
 	get_material().set_shader_param("lightDir", _lightDir)

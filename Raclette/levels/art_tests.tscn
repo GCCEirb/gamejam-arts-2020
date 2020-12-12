@@ -1,16 +1,14 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://scripts/tileset.gd" type="Script" id=1]
-[ext_resource path="res://scripts/texture_rect_lighting.gd" type="Script" id=2]
+[ext_resource path="res://assets/prefabs/ParallaxBackground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/fake_outside_window.gd" type="Script" id=3]
 [ext_resource path="res://Assets/shaders/Water.shader" type="Shader" id=4]
 [ext_resource path="res://assets/shaders/fake_outside_window.shader" type="Shader" id=5]
 [ext_resource path="res://assets/tilesets/scene.ts.tres" type="TileSet" id=6]
-[ext_resource path="res://assets/materials/texture_rect_lighting.material" type="Material" id=7]
 [ext_resource path="res://Assets/textures/water_boiled.png" type="Texture" id=8]
 [ext_resource path="res://Assets/textures/raclette_cheese_blob_animations.png" type="Texture" id=9]
 [ext_resource path="res://assets/prefabs/ProcWater.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Assets/textures/background.png" type="Texture" id=12]
 [ext_resource path="res://Assets/textures/hommes_burger_animations.png" type="Texture" id=14]
 [ext_resource path="res://Assets/textures/raclette_cheese_slice_animations.png" type="Texture" id=15]
 [ext_resource path="res://Assets/textures/fakeoutside.png" type="Texture" id=16]
@@ -350,24 +348,7 @@ animations = [ {
 position = Vector2( 512, 300 )
 current = true
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="WallBackground" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
-material = ExtResource( 7 )
-margin_left = -455.813
-margin_top = -560.0
-margin_right = 1592.19
-margin_bottom = 1488.0
-texture = ExtResource( 12 )
-stretch_mode = 2
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-_ambient = 0.05
-_specular = 0.2
+[node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
 
 [node name="FakeOutsideWindow" type="TextureRect" parent="."]
 material = SubResource( 1 )
@@ -406,7 +387,7 @@ position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 26 )
 animation = "Walking"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -422,7 +403,7 @@ material = SubResource( 46 )
 position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 63 )
-frame = 7
+frame = 1
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )

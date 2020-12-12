@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/texture_rect_lighting.gd" type="Script" id=1]
+[ext_resource path="res://assets/materials/texture_rect_lighting.material" type="Material" id=2]
+[ext_resource path="res://Assets/textures/background.png" type="Texture" id=3]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="WallBackground" type="TextureRect" parent="ParallaxLayer"]
+material = ExtResource( 2 )
+margin_left = -455.813
+margin_top = -560.0
+margin_right = 1592.19
+margin_bottom = 1488.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+_ambient = 0.05
+_specular = 0.2
