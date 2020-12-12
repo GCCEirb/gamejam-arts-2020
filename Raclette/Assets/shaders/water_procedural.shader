@@ -33,7 +33,7 @@ uniform float deformScale: hint_range(0., 1.);
 uniform float deformSpeed: hint_range(0., 1.);
 uniform vec4 colorDepth: hint_color = vec4(1.);
 uniform vec4 colorSurface: hint_color = vec4(1.);
-uniform float flowFreq: hint_range(0., 4.);
+uniform float flowFreq: hint_range(0., 8.);
 // Fragment Shader
 
 float remap01(float x, float m_, float _m)

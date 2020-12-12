@@ -1,10 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/tilesets/scene.ts.tres" type="TileSet" id=1]
+[ext_resource path="res://characters/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/prefabs/ProcWater.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
+collision_layer = 2147483649
 format = 1
 tile_data = PoolIntArray( 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 13, 0, 524296, 14, 0, 524297, 15, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 589824, 8, 0, 589825, 8, 0, 589826, 8, 0, 589827, 8, 0, 589828, 8, 0, 589829, 8, 0, 589830, 8, 0, 589831, 13, 0, 589832, 14, 0, 589833, 15, 0, 589834, 8, 0, 589835, 8, 0, 589836, 8, 0, 589837, 8, 0, 589838, 8, 0, 589839, 8, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 141.516, 477.413 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="ProcWater" parent="." instance=ExtResource( 3 )]
+position = Vector2( 544.301, 576.559 )
+scale = Vector2( 2.69827, 1.98082 )

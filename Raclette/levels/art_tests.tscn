@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://scripts/tileset.gd" type="Script" id=1]
 [ext_resource path="res://scripts/texture_rect_lighting.gd" type="Script" id=2]
@@ -9,13 +9,11 @@
 [ext_resource path="res://assets/materials/texture_rect_lighting.material" type="Material" id=7]
 [ext_resource path="res://Assets/textures/water_boiled.png" type="Texture" id=8]
 [ext_resource path="res://Assets/textures/raclette_cheese_blob_animations.png" type="Texture" id=9]
+[ext_resource path="res://assets/prefabs/ProcWater.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/textures/background.png" type="Texture" id=12]
 [ext_resource path="res://Assets/textures/hommes_burger_animations.png" type="Texture" id=14]
 [ext_resource path="res://Assets/textures/raclette_cheese_slice_animations.png" type="Texture" id=15]
 [ext_resource path="res://Assets/textures/fakeoutside.png" type="Texture" id=16]
-[ext_resource path="res://assets/shaders/water_procedural.shader" type="Shader" id=17]
-[ext_resource path="res://assets/textures/tile_top_greyscale.png" type="Texture" id=18]
-[ext_resource path="res://assets/textures/bubbles.png" type="Texture" id=19]
 [ext_resource path="res://assets/textures/CheeseRigg.png" type="Texture" id=20]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -346,23 +344,6 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="OpenSimplexNoise" id=64]
-
-[sub_resource type="NoiseTexture" id=65]
-seamless = true
-noise = SubResource( 64 )
-
-[sub_resource type="ShaderMaterial" id=66]
-shader = ExtResource( 17 )
-shader_param/noiseAmplitude = 0.1
-shader_param/percentHeight = 0.115
-shader_param/deformScale = 0.135
-shader_param/deformSpeed = 0.518
-shader_param/colorDepth = Color( 0.152941, 0.556863, 0.635294, 1 )
-shader_param/colorSurface = Color( 0.494118, 0.811765, 0.980392, 1 )
-shader_param/flowFreq = 4.0
-shader_param/sNoise = SubResource( 65 )
-
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -417,7 +398,7 @@ position = Vector2( 448, 272 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 9 )
 animation = "Walking"
-frame = 2
+frame = 3
 playing = true
 
 [node name="HommeBurger" type="AnimatedSprite" parent="."]
@@ -425,7 +406,7 @@ position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 26 )
 animation = "Walking"
-frame = 5
+frame = 2
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -433,6 +414,7 @@ position = Vector2( 472, 568 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 43 )
 animation = "Idle"
+frame = 1
 playing = true
 
 [node name="Water" type="AnimatedSprite" parent="."]
@@ -440,17 +422,12 @@ material = SubResource( 46 )
 position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 63 )
-frame = 13
+frame = 7
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )
 
-[node name="ProcWater" type="Sprite" parent="."]
-material = SubResource( 66 )
-position = Vector2( 511.598, 576.559 )
-scale = Vector2( 3.72025, 1.98082 )
-texture = ExtResource( 18 )
-normal_map = ExtResource( 19 )
+[node name="ProcWater" parent="." instance=ExtResource( 10 )]
 
 [node name="CheeseRigged" type="Node2D" parent="."]
 position = Vector2( 421.044, 143.06 )
