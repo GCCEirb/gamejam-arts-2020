@@ -27,7 +27,10 @@ func fire(direction):
 	new_bullet.direction = direction
 	add_child(new_bullet)
 	# le temps de trouver un endroit ou spawn les truc on les met à gauche
-	new_bullet.position = position + Vector2(-300, -85)
+	var spawn_pos = Vector2(-300, -85)
+	if (direction.x < 0):
+		spawn_pos = Vector2(300, -85)
+	new_bullet.position = position + spawn_pos
 	
 
 
