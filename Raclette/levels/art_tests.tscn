@@ -1,18 +1,15 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://scripts/tileset.gd" type="Script" id=1]
 [ext_resource path="res://scripts/texture_rect_lighting.gd" type="Script" id=2]
 [ext_resource path="res://scripts/fake_outside_window.gd" type="Script" id=3]
 [ext_resource path="res://Assets/shaders/Water.shader" type="Shader" id=4]
 [ext_resource path="res://assets/shaders/fake_outside_window.shader" type="Shader" id=5]
-[ext_resource path="res://assets/textures/tileset_normal_map.png" type="Texture" id=6]
+[ext_resource path="res://assets/tilesets/scene.ts.tres" type="TileSet" id=6]
 [ext_resource path="res://assets/materials/texture_rect_lighting.material" type="Material" id=7]
 [ext_resource path="res://Assets/textures/water_boiled.png" type="Texture" id=8]
 [ext_resource path="res://Assets/textures/raclette_cheese_blob_animations.png" type="Texture" id=9]
-[ext_resource path="res://Assets/textures/tileset.png" type="Texture" id=10]
-[ext_resource path="res://assets/materials/tileset_lighting.material" type="Material" id=11]
 [ext_resource path="res://Assets/textures/background.png" type="Texture" id=12]
-[ext_resource path="res://assets/textures/tile_top_normal_map.png" type="Texture" id=13]
 [ext_resource path="res://Assets/textures/hommes_burger_animations.png" type="Texture" id=14]
 [ext_resource path="res://Assets/textures/raclette_cheese_slice_animations.png" type="Texture" id=15]
 [ext_resource path="res://Assets/textures/fakeoutside.png" type="Texture" id=16]
@@ -24,311 +21,6 @@
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 5 )
 shader_param/viewDir = null
-
-[sub_resource type="Shader" id=2]
-
-[sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 2 )
-
-[sub_resource type="TileSet" id=4]
-0/name = "Wood"
-0/texture = ExtResource( 10 )
-0/normal_map = ExtResource( 6 )
-0/tex_offset = Vector2( 0, 0 )
-0/material = ExtResource( 11 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 64, 64 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-1/name = "Nap"
-1/texture = ExtResource( 10 )
-1/normal_map = ExtResource( 6 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 64, 0, 64, 64 )
-1/tile_mode = 0
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape_one_way = false
-1/shape_one_way_margin = 0.0
-1/shapes = [  ]
-1/z_index = 0
-2/name = "Cutelry tail"
-2/texture = ExtResource( 10 )
-2/tex_offset = Vector2( 0, 0 )
-2/modulate = Color( 1, 1, 1, 1 )
-2/region = Rect2( 128, 0, 64, 64 )
-2/tile_mode = 0
-2/occluder_offset = Vector2( 0, 0 )
-2/navigation_offset = Vector2( 0, 0 )
-2/shape_offset = Vector2( 0, 0 )
-2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape_one_way = false
-2/shape_one_way_margin = 0.0
-2/shapes = [  ]
-2/z_index = 0
-3/name = "Cutelry Mid"
-3/texture = ExtResource( 10 )
-3/tex_offset = Vector2( 0, 0 )
-3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 192, 0, 64, 64 )
-3/tile_mode = 0
-3/occluder_offset = Vector2( 0, 0 )
-3/navigation_offset = Vector2( 0, 0 )
-3/shape_offset = Vector2( 0, 0 )
-3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape_one_way = false
-3/shape_one_way_margin = 0.0
-3/shapes = [  ]
-3/z_index = 0
-4/name = "Cutelry spoon"
-4/texture = ExtResource( 10 )
-4/tex_offset = Vector2( 0, 0 )
-4/modulate = Color( 1, 1, 1, 1 )
-4/region = Rect2( 256, 0, 64, 64 )
-4/tile_mode = 0
-4/occluder_offset = Vector2( 0, 0 )
-4/navigation_offset = Vector2( 0, 0 )
-4/shape_offset = Vector2( 0, 0 )
-4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape_one_way = false
-4/shape_one_way_margin = 0.0
-4/shapes = [  ]
-4/z_index = 0
-5/name = "Cutelry fork"
-5/texture = ExtResource( 10 )
-5/tex_offset = Vector2( 0, 0 )
-5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 320, 0, 64, 64 )
-5/tile_mode = 0
-5/occluder_offset = Vector2( 0, 0 )
-5/navigation_offset = Vector2( 0, 0 )
-5/shape_offset = Vector2( 0, 0 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape_one_way = false
-5/shape_one_way_margin = 0.0
-5/shapes = [  ]
-5/z_index = 0
-6/name = "Cutelry knife"
-6/texture = ExtResource( 10 )
-6/tex_offset = Vector2( 0, 0 )
-6/modulate = Color( 1, 1, 1, 1 )
-6/region = Rect2( 384, 0, 64, 64 )
-6/tile_mode = 0
-6/occluder_offset = Vector2( 0, 0 )
-6/navigation_offset = Vector2( 0, 0 )
-6/shape_offset = Vector2( 0, 0 )
-6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape_one_way = false
-6/shape_one_way_margin = 0.0
-6/shapes = [  ]
-6/z_index = 0
-7/name = "Salt"
-7/texture = ExtResource( 10 )
-7/normal_map = ExtResource( 13 )
-7/tex_offset = Vector2( 0, 0 )
-7/material = ExtResource( 11 )
-7/modulate = Color( 1, 1, 1, 1 )
-7/region = Rect2( 448, 0, 64, 64 )
-7/tile_mode = 0
-7/occluder_offset = Vector2( 0, 0 )
-7/navigation_offset = Vector2( 0, 0 )
-7/shape_offset = Vector2( 0, 0 )
-7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape_one_way = false
-7/shape_one_way_margin = 0.0
-7/shapes = [  ]
-7/z_index = 0
-8/name = "White Bricks"
-8/texture = ExtResource( 10 )
-8/normal_map = ExtResource( 6 )
-8/tex_offset = Vector2( 0, 0 )
-8/material = ExtResource( 11 )
-8/modulate = Color( 1, 1, 1, 1 )
-8/region = Rect2( 0, 64, 64, 64 )
-8/tile_mode = 0
-8/occluder_offset = Vector2( 0, 0 )
-8/navigation_offset = Vector2( 0, 0 )
-8/shape_offset = Vector2( 0, 0 )
-8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-8/shape_one_way = false
-8/shape_one_way_margin = 0.0
-8/shapes = [  ]
-8/z_index = 0
-9/name = "Wall Stones"
-9/texture = ExtResource( 10 )
-9/normal_map = ExtResource( 6 )
-9/tex_offset = Vector2( 0, 0 )
-9/material = ExtResource( 11 )
-9/modulate = Color( 1, 1, 1, 1 )
-9/region = Rect2( 64, 64, 64, 64 )
-9/tile_mode = 0
-9/occluder_offset = Vector2( 0, 0 )
-9/navigation_offset = Vector2( 0, 0 )
-9/shape_offset = Vector2( 0, 0 )
-9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-9/shape_one_way = false
-9/shape_one_way_margin = 0.0
-9/shapes = [  ]
-9/z_index = 0
-10/name = "Window Glass"
-10/texture = ExtResource( 10 )
-10/tex_offset = Vector2( 0, 0 )
-10/material = SubResource( 3 )
-10/modulate = Color( 1, 1, 1, 1 )
-10/region = Rect2( 128, 64, 64, 64 )
-10/tile_mode = 0
-10/occluder_offset = Vector2( 0, 0 )
-10/navigation_offset = Vector2( 0, 0 )
-10/shape_offset = Vector2( 0, 0 )
-10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape_one_way = false
-10/shape_one_way_margin = 0.0
-10/shapes = [  ]
-10/z_index = 0
-11/name = "Tiling"
-11/texture = ExtResource( 10 )
-11/normal_map = ExtResource( 6 )
-11/tex_offset = Vector2( 0, 0 )
-11/material = ExtResource( 11 )
-11/modulate = Color( 1, 1, 1, 1 )
-11/region = Rect2( 192, 64, 64, 64 )
-11/tile_mode = 0
-11/occluder_offset = Vector2( 0, 0 )
-11/navigation_offset = Vector2( 0, 0 )
-11/shape_offset = Vector2( 0, 0 )
-11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-11/shape_one_way = false
-11/shape_one_way_margin = 0.0
-11/shapes = [  ]
-11/z_index = 0
-12/name = "tileset.png 12"
-12/texture = ExtResource( 10 )
-12/tex_offset = Vector2( 0, 0 )
-12/modulate = Color( 1, 1, 1, 1 )
-12/region = Rect2( 256, 64, 64, 64 )
-12/tile_mode = 0
-12/occluder_offset = Vector2( 0, 0 )
-12/navigation_offset = Vector2( 0, 0 )
-12/shape_offset = Vector2( 0, 0 )
-12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape_one_way = false
-12/shape_one_way_margin = 0.0
-12/shapes = [  ]
-12/z_index = 0
-13/name = "Boiler Plate Left"
-13/texture = ExtResource( 10 )
-13/normal_map = ExtResource( 6 )
-13/tex_offset = Vector2( 0, 0 )
-13/material = ExtResource( 11 )
-13/modulate = Color( 1, 1, 1, 1 )
-13/region = Rect2( 0, 128, 64, 64 )
-13/tile_mode = 0
-13/occluder_offset = Vector2( 0, 0 )
-13/navigation_offset = Vector2( 0, 0 )
-13/shape_offset = Vector2( 0, 0 )
-13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-13/shape_one_way = false
-13/shape_one_way_margin = 0.0
-13/shapes = [  ]
-13/z_index = 0
-14/name = "Boiler Plate Mid"
-14/texture = ExtResource( 10 )
-14/normal_map = ExtResource( 6 )
-14/tex_offset = Vector2( 0, 0 )
-14/material = ExtResource( 11 )
-14/modulate = Color( 1, 1, 1, 1 )
-14/region = Rect2( 64, 128, 64, 64 )
-14/tile_mode = 0
-14/occluder_offset = Vector2( 0, 0 )
-14/navigation_offset = Vector2( 0, 0 )
-14/shape_offset = Vector2( 0, 0 )
-14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-14/shape_one_way = false
-14/shape_one_way_margin = 0.0
-14/shapes = [  ]
-14/z_index = 0
-15/name = "Boiler Plate Right"
-15/texture = ExtResource( 10 )
-15/normal_map = ExtResource( 6 )
-15/tex_offset = Vector2( 0, 0 )
-15/material = ExtResource( 11 )
-15/modulate = Color( 1, 1, 1, 1 )
-15/region = Rect2( 128, 128, 64, 64 )
-15/tile_mode = 0
-15/occluder_offset = Vector2( 0, 0 )
-15/navigation_offset = Vector2( 0, 0 )
-15/shape_offset = Vector2( 0, 0 )
-15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-15/shape_one_way = false
-15/shape_one_way_margin = 0.0
-15/shapes = [  ]
-15/z_index = 0
-16/name = "Water Glass Left"
-16/texture = ExtResource( 10 )
-16/tex_offset = Vector2( 0, 0 )
-16/modulate = Color( 1, 1, 1, 1 )
-16/region = Rect2( 192, 128, 64, 64 )
-16/tile_mode = 0
-16/occluder_offset = Vector2( 0, 0 )
-16/navigation_offset = Vector2( 0, 0 )
-16/shape_offset = Vector2( 0, 0 )
-16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-16/shape_one_way = false
-16/shape_one_way_margin = 0.0
-16/shapes = [  ]
-16/z_index = 0
-17/name = "Water Glass Mid"
-17/texture = ExtResource( 10 )
-17/tex_offset = Vector2( 0, 0 )
-17/modulate = Color( 1, 1, 1, 1 )
-17/region = Rect2( 256, 128, 64, 64 )
-17/tile_mode = 0
-17/occluder_offset = Vector2( 0, 0 )
-17/navigation_offset = Vector2( 0, 0 )
-17/shape_offset = Vector2( 0, 0 )
-17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-17/shape_one_way = false
-17/shape_one_way_margin = 0.0
-17/shapes = [  ]
-17/z_index = 0
-18/name = "Water Glass Right"
-18/texture = ExtResource( 10 )
-18/tex_offset = Vector2( 0, 0 )
-18/modulate = Color( 1, 1, 1, 1 )
-18/region = Rect2( 320, 128, 64, 64 )
-18/tile_mode = 0
-18/occluder_offset = Vector2( 0, 0 )
-18/navigation_offset = Vector2( 0, 0 )
-18/shape_offset = Vector2( 0, 0 )
-18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-18/shape_one_way = false
-18/shape_one_way_margin = 0.0
-18/shapes = [  ]
-18/z_index = 0
-19/name = "Rose"
-19/texture = ExtResource( 10 )
-19/tex_offset = Vector2( 0, 0 )
-19/modulate = Color( 1, 1, 1, 1 )
-19/region = Rect2( 384, 64, 64, 64 )
-19/tile_mode = 0
-19/occluder_offset = Vector2( 0, 0 )
-19/navigation_offset = Vector2( 0, 0 )
-19/shape_offset = Vector2( 0, 0 )
-19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-19/shape_one_way = false
-19/shape_one_way_margin = 0.0
-19/shapes = [  ]
-19/z_index = 0
 
 [sub_resource type="AtlasTexture" id=5]
 flags = 4
@@ -361,98 +53,98 @@ animations = [ {
 [sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 1024, 512, 512 )
+region = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 1024, 512, 512 )
+region = Rect2( 512, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 1024, 512, 512 )
+region = Rect2( 1024, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 1024, 512, 512 )
+region = Rect2( 1536, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 1536, 512, 512 )
+region = Rect2( 0, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 1536, 512, 512 )
+region = Rect2( 512, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 1536, 512, 512 )
+region = Rect2( 1024, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 1536, 512, 512 )
+region = Rect2( 1536, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 0, 512, 512 )
+region = Rect2( 0, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 0, 512, 512 )
+region = Rect2( 512, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 0, 512, 512 )
+region = Rect2( 1024, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 0, 512, 512 )
+region = Rect2( 1536, 1024, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=22]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 0, 512, 512, 512 )
+region = Rect2( 0, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 512, 512, 512, 512 )
+region = Rect2( 512, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1024, 512, 512, 512 )
+region = Rect2( 1024, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 14 )
-region = Rect2( 1536, 512, 512, 512 )
+region = Rect2( 1536, 1536, 512, 512 )
 
 [sub_resource type="SpriteFrames" id=26]
 animations = [ {
-"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
 "loop": false,
 "name": "Attack",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
-"loop": true,
-"name": "Walking",
 "speed": 5.0
 } ]
 
@@ -479,62 +171,62 @@ region = Rect2( 1536, 1024, 512, 512 )
 [sub_resource type="AtlasTexture" id=31]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 1536, 512, 512 )
+region = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=32]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 1536, 512, 512 )
+region = Rect2( 512, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 1536, 512, 512 )
+region = Rect2( 1024, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 1536, 512, 512 )
+region = Rect2( 1536, 0, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 0, 512, 512 )
+region = Rect2( 0, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=36]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 0, 512, 512 )
+region = Rect2( 512, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=37]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 0, 512, 512 )
+region = Rect2( 1024, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=38]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 0, 512, 512 )
+region = Rect2( 1536, 512, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=39]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 0, 512, 512, 512 )
+region = Rect2( 0, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=40]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 512, 512, 512, 512 )
+region = Rect2( 512, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=41]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1024, 512, 512, 512 )
+region = Rect2( 1024, 1536, 512, 512 )
 
 [sub_resource type="AtlasTexture" id=42]
 flags = 4
 atlas = ExtResource( 15 )
-region = Rect2( 1536, 512, 512, 512 )
+region = Rect2( 1536, 1536, 512, 512 )
 
 [sub_resource type="SpriteFrames" id=43]
 animations = [ {
@@ -543,14 +235,14 @@ animations = [ {
 "name": "Jumping",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
 "loop": true,
 "name": "Walking",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 } ]
 
@@ -663,12 +355,12 @@ noise = SubResource( 64 )
 [sub_resource type="ShaderMaterial" id=66]
 shader = ExtResource( 17 )
 shader_param/noiseAmplitude = 0.1
-shader_param/percentHeight = 0.269
+shader_param/percentHeight = 0.115
 shader_param/deformScale = 0.135
 shader_param/deformSpeed = 0.518
 shader_param/colorDepth = Color( 0.152941, 0.556863, 0.635294, 1 )
 shader_param/colorSurface = Color( 0.494118, 0.811765, 0.980392, 1 )
-shader_param/flowFreq = 3.308
+shader_param/flowFreq = 4.0
 shader_param/sNoise = SubResource( 65 )
 
 [node name="Node2D" type="Node2D"]
@@ -683,9 +375,9 @@ current = true
 
 [node name="WallBackground" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
 material = ExtResource( 7 )
-margin_left = -456.0
+margin_left = -455.813
 margin_top = -560.0
-margin_right = 1592.0
+margin_right = 1592.19
 margin_bottom = 1488.0
 texture = ExtResource( 12 )
 stretch_mode = 2
@@ -712,7 +404,7 @@ __meta__ = {
 m_currentCameraPath = "/root/Node2D/Camera2D"
 
 [node name="LevelWalls" type="TileMap" parent="."]
-tile_set = SubResource( 4 )
+tile_set = ExtResource( 6 )
 format = 1
 tile_data = PoolIntArray( 65538, 10, 0, 65539, 10, 0, 131074, 10, 0, 131075, 10, 0, 196610, 12, 0, 196611, 12, 0, 196620, 11, 0, 196621, 11, 0, 262156, 11, 0, 262157, 11, 0, 327686, 9, 0, 327687, 9, 0, 327688, 9, 0, 327689, 9, 0, 458752, 2, 0, 458753, 3, 0, 458754, 6, 0, 458755, 7, 0, 458763, 2, 0, 458764, 3, 0, 458765, 5, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 13, 0, 524295, 14, 0, 524296, 14, 0, 524297, 15, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 589824, 8, 0, 589825, 8, 0, 589826, 8, 0, 589827, 8, 0, 589828, 8, 0, 589829, 8, 0, 589830, 13, 0, 589831, 14, 0, 589832, 14, 0, 589833, 15, 0, 589834, 8, 0, 589835, 8, 0, 589836, 8, 0, 589837, 8, 0, 589838, 8, 0, 589839, 8, 0 )
 script = ExtResource( 1 )
@@ -725,7 +417,7 @@ position = Vector2( 448, 272 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 9 )
 animation = "Walking"
-frame = 1
+frame = 2
 playing = true
 
 [node name="HommeBurger" type="AnimatedSprite" parent="."]
@@ -733,6 +425,7 @@ position = Vector2( 824, 464 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 26 )
 animation = "Walking"
+frame = 5
 playing = true
 
 [node name="Cheese" type="AnimatedSprite" parent="."]
@@ -740,7 +433,6 @@ position = Vector2( 472, 568 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 43 )
 animation = "Idle"
-frame = 3
 playing = true
 
 [node name="Water" type="AnimatedSprite" parent="."]
@@ -748,15 +440,15 @@ material = SubResource( 46 )
 position = Vector2( 512, 576 )
 scale = Vector2( 0.929843, 0.511145 )
 frames = SubResource( 63 )
-frame = 3
+frame = 13
 speed_scale = 2.0
 playing = true
 offset = Vector2( 0, 1 )
 
 [node name="ProcWater" type="Sprite" parent="."]
 material = SubResource( 66 )
-position = Vector2( 545.684, 456.694 )
-scale = Vector2( 8.50781, 5.75 )
+position = Vector2( 511.598, 576.559 )
+scale = Vector2( 3.72025, 1.98082 )
 texture = ExtResource( 18 )
 normal_map = ExtResource( 19 )
 
@@ -779,7 +471,7 @@ bones = [ NodePath("Hips"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 internal_vertex_count = 13
 
 [node name="LegLeft" type="Polygon2D" parent="CheeseRigged/polygons"]
-position = Vector2( 320.882, -101.003 )
+position = Vector2( 320.882, -103.25 )
 rotation = 0.0143582
 texture = ExtResource( 20 )
 skeleton = NodePath("../../Skeleton2D")
@@ -794,9 +486,11 @@ position = Vector2( 280.667, 52.672 )
 rotation = -0.00608348
 texture = ExtResource( 20 )
 skeleton = NodePath("../../Skeleton2D")
-polygon = PoolVector2Array( 153.642, 85.4305, 166.887, 85.4305, 176.159, 103.974, 168, 120, 157.616, 156.291, 166.225, 191.391, 188.079, 204.636, 190.729, 231.126, 172.848, 247.682, 149.669, 246.358, 137.748, 224.503, 139.073, 203.974, 124.503, 165.563, 124.503, 147.02, 141.06, 100 )
-uv = PoolVector2Array( 153.642, 85.4305, 166.887, 85.4305, 176.159, 103.974, 168, 120, 157.616, 156.291, 166.225, 191.391, 188.079, 204.636, 190.729, 231.126, 172.848, 247.682, 149.669, 246.358, 137.748, 224.503, 139.073, 203.974, 124.503, 165.563, 124.503, 147.02, 141.06, 100 )
-bones = [ NodePath("Hips"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite/EyePupilRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite/EyePupilLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft"), PoolRealArray( 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft"), PoolRealArray( 0, 0, 0, 0, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft/HandLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight/HandRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight/FootRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft/FootLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+polygon = PoolVector2Array( 153.642, 85.4305, 166.887, 85.4305, 176.159, 103.974, 168, 120, 157.616, 156.291, 166.225, 191.391, 188.079, 204.636, 190.729, 231.126, 172.848, 247.682, 149.669, 246.358, 137.748, 224.503, 139.073, 203.974, 124.503, 165.563, 124.503, 147.02, 141.06, 100, 153.876, 103.876, 144.961, 128.295, 136.047, 155.814, 135.271, 167.054, 149.612, 209.69, 149.612, 222.868, 163.566, 238.76, 175.581, 232.558, 181.008, 220.155, 177.519, 208.915, 168.992, 203.876, 157.752, 201.55, 144.961, 159.302, 152.713, 144.574, 155.814, 127.519, 165.891, 114.729, 165.504, 103.488, 159.69, 101.163 )
+uv = PoolVector2Array( 153.642, 85.4305, 166.887, 85.4305, 176.159, 103.974, 168, 120, 157.616, 156.291, 166.225, 191.391, 188.079, 204.636, 190.729, 231.126, 172.848, 247.682, 149.669, 246.358, 137.748, 224.503, 139.073, 203.974, 124.503, 165.563, 124.503, 147.02, 141.06, 100, 153.876, 103.876, 144.961, 128.295, 136.047, 155.814, 135.271, 167.054, 149.612, 209.69, 149.612, 222.868, 163.566, 238.76, 175.581, 232.558, 181.008, 220.155, 177.519, 208.915, 168.992, 203.876, 157.752, 201.55, 144.961, 159.302, 152.713, 144.574, 155.814, 127.519, 165.891, 114.729, 165.504, 103.488, 159.69, 101.163 )
+polygons = [ PoolIntArray( 14, 15, 32, 0 ), PoolIntArray( 32, 31, 2, 1, 0 ), PoolIntArray( 2, 31, 30, 3 ), PoolIntArray( 30, 29, 3 ), PoolIntArray( 29, 28, 4, 3 ), PoolIntArray( 28, 27, 4 ), PoolIntArray( 27, 26, 5, 4 ), PoolIntArray( 26, 25, 5 ), PoolIntArray( 25, 24, 6, 5 ), PoolIntArray( 24, 23, 7, 6 ), PoolIntArray( 23, 22, 8, 7 ), PoolIntArray( 22, 21, 8 ), PoolIntArray( 21, 9, 8 ), PoolIntArray( 10, 20, 21, 9 ), PoolIntArray( 10, 11, 19, 20 ), PoolIntArray( 12, 18, 19, 11 ), PoolIntArray( 13, 12, 18, 17 ), PoolIntArray( 13, 17, 16, 15, 14 ), PoolIntArray( 32, 31, 30, 29, 28, 27, 17, 16, 15 ), PoolIntArray( 17, 18, 27 ), PoolIntArray( 18, 19, 26, 27 ), PoolIntArray( 19, 20, 21, 22, 23, 24, 25, 26 ) ]
+bones = [ NodePath("Hips"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite/EyePupilRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite/EyePupilLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft"), PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft"), PoolRealArray( 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft/HandLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight/HandRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight/FootRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft/FootLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 18
 
 [node name="BodyHead" type="Polygon2D" parent="CheeseRigged/polygons"]
 texture = ExtResource( 20 )
@@ -843,7 +537,7 @@ position = Vector2( 152, 56 )
 texture = ExtResource( 20 )
 skeleton = NodePath("../../Skeleton2D")
 polygon = PoolVector2Array( 90.7285, 84.106, 103.974, 84.106, 113.245, 102.649, 94.702, 154.967, 103.311, 190.066, 125.166, 203.311, 127.815, 229.801, 109.934, 246.358, 86.755, 245.033, 74.8344, 223.179, 76.1589, 202.649, 61.5894, 164.238, 61.5894, 145.695, 78.1457, 98.6755 )
-uv = PoolVector2Array( 153.642, 85.4305, 166.887, 85.4305, 176.159, 103.974, 157.616, 156.291, 166.225, 191.391, 188.079, 204.636, 190.729, 231.126, 172.848, 247.682, 149.669, 246.358, 137.748, 224.503, 139.073, 203.974, 124.503, 165.563, 124.503, 147.02, 141.06, 100 )
+uv = PoolVector2Array( 90.8513, 86.2057, 104.096, 86.2057, 113.368, 104.749, 94.8253, 157.066, 103.434, 192.166, 125.288, 205.411, 127.938, 231.901, 110.057, 248.457, 86.8783, 247.133, 74.9573, 225.278, 76.2823, 204.749, 61.7123, 166.338, 61.7123, 147.795, 78.2693, 100.775 )
 bones = [ NodePath("Hips"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeRightWhite/EyePupilRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/EyeLeftWhite/EyePupilLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderLeft/ElbowLeft/HandLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/ShoulderRight"), PoolRealArray( 0.48, 0.48, 0.48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.48 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight"), PoolRealArray( 0, 0, 0, 0.48, 0, 0, 0, 0, 0, 0, 0, 0.48, 0.48, 0 ), NodePath("Hips/BodyHead/ShoulderRight/ElbowRight/HandRight"), PoolRealArray( 0, 0, 0, 0, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0.48, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegLeft/CalfLeft/FootLeft"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), NodePath("Hips/BodyHead/Pelvis/LegRight/CalfRight/FootRight"), PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="Skeleton2D" type="Skeleton2D" parent="CheeseRigged"]
@@ -862,7 +556,7 @@ rotation = -0.063003
 rest = Transform2D( 1, 0, 0, 1, -32, -24 )
 
 [node name="EyePupilRight" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/EyeRightWhite"]
-position = Vector2( 2.66443, -15.8319 )
+position = Vector2( 4.95471, -16.4381 )
 rest = Transform2D( 1, 0, 0, 1, 0, -16 )
 
 [node name="EyeLeftWhite" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead"]
@@ -875,15 +569,15 @@ position = Vector2( 0, -16 )
 rest = Transform2D( 1, 0, 0, 1, 0, -16 )
 
 [node name="ShoulderLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead"]
-position = Vector2( 88, -8 )
+position = Vector2( 91.7458, -2.75586 )
 rest = Transform2D( 1, 0, 0, 1, 88, -8 )
 
 [node name="ElbowLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/ShoulderLeft"]
-position = Vector2( -8, 48 )
+position = Vector2( -12.495, 48.749 )
 rest = Transform2D( 1, 0, 0, 1, -8, 48 )
 
 [node name="HandLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/ShoulderLeft/ElbowLeft"]
-position = Vector2( 8, 48 )
+position = Vector2( 16.2408, 66.7289 )
 rest = Transform2D( 1, 0, 0, 1, 8, 48 )
 
 [node name="ShoulderRight" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead"]
@@ -897,7 +591,7 @@ rotation = -0.0911568
 rest = Transform2D( 1, 0, 0, 1, -16, 48 )
 
 [node name="HandRight" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/ShoulderRight/ElbowRight"]
-position = Vector2( 8, 56 )
+position = Vector2( 0.622192, 69.2543 )
 rest = Transform2D( 1, 0, 0, 1, 8, 56 )
 
 [node name="Pelvis" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead"]
@@ -913,7 +607,7 @@ position = Vector2( 8, 40 )
 rest = Transform2D( 1, 0, 0, 1, 8, 40 )
 
 [node name="FootRight" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/Pelvis/LegRight/CalfRight"]
-position = Vector2( -16, 80 )
+position = Vector2( -15.2509, 82.2474 )
 rest = Transform2D( 1, 0, 0, 1, -16, 80 )
 
 [node name="LegLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/Pelvis"]
@@ -921,10 +615,10 @@ position = Vector2( 56, 0 )
 rest = Transform2D( 1, 0, 0, 1, 56, 0 )
 
 [node name="CalfLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/Pelvis/LegLeft"]
-position = Vector2( 8, 40 )
+position = Vector2( 7.25073, 41.4983 )
 rest = Transform2D( 1, 0, 0, 1, 8, 40 )
 
 [node name="FootLeft" type="Bone2D" parent="CheeseRigged/Skeleton2D/Hips/BodyHead/Pelvis/LegLeft/CalfLeft"]
-position = Vector2( -16, 80 )
+position = Vector2( -15.2509, 86.7424 )
 rotation = -0.00188428
 rest = Transform2D( 0.999998, -0.00188428, 0.00188428, 0.999998, -16, 80 )

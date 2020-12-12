@@ -101,5 +101,7 @@ void fragment()
 	vec4 screenTex = textureLod(SCREEN_TEXTURE, SCREEN_UV+offset, 0.0);
 	vec4 waterColor = mix(colorSurface, colorDepth, alpha*alpha);
 	waterColor *= (alpha>0.?1.:0.);
-	COLOR = mix(screenTex, waterColor, max(0.4, alpha)) + colorSurface*remap01(horizLine(UV.y, height, 1.), 0.99, 1.);
+	COLOR.rgb = mix(screenTex.rgb, waterColor.rgb, max(0.4, alpha))
+	 + colorSurface.rgb*remap01(horizLine(UV.y, height, 1.), 0.99, 1.);
+	COLOR.a = 1.-pow(remap01(height-UV.y, 0.01, 1.), 0.01);
 }
