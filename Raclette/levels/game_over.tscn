@@ -123,15 +123,6 @@ anims/fade_in = SubResource( 3 )
 anims/start = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Hider" type="ColorRect" parent="CanvasLayer"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="pressed" from="VBoxContainer/Retry" to="." method="_on_Retry_pressed"]
 [connection signal="pressed" from="VBoxContainer/TitleScreen" to="." method="_on_TitleScreen_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

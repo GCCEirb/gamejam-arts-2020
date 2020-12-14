@@ -1,20 +1,13 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/fonts/quicksand-variable-font-wght.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://levels/home.gd" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://Assets/textures/menu_title.png" type="Texture" id=4]
-[ext_resource path="res://Assets/textures/displacement_map.png" type="Texture" id=5]
 [ext_resource path="res://Assets/shaders/FlowMap.shader" type="Shader" id=6]
 
-[sub_resource type="ShaderMaterial" id=6]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 6 )
-shader_param/cColor = Color( 1, 0.956863, 0.756863, 1 )
-shader_param/sFlowMap = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=1]
-size = 32
-font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 32
@@ -25,6 +18,10 @@ size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
 size = 32
 font_data = ExtResource( 1 )
 
@@ -43,7 +40,7 @@ texture = ExtResource( 3 )
 expand = true
 
 [node name="Title" type="TextureRect" parent="."]
-material = SubResource( 6 )
+material = SubResource( 1 )
 margin_right = 1024.0
 margin_bottom = 600.0
 texture = ExtResource( 4 )
@@ -62,7 +59,7 @@ __meta__ = {
 margin_top = 202.0
 margin_right = 174.0
 margin_bottom = 248.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 disabled = true
 text = "Continue"
 
@@ -70,14 +67,14 @@ text = "Continue"
 margin_top = 252.0
 margin_right = 174.0
 margin_bottom = 298.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "New Game"
 
 [node name="Options" type="Button" parent="VBoxContainer"]
 margin_top = 302.0
 margin_right = 174.0
 margin_bottom = 348.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 disabled = true
 text = "Options"
 
@@ -85,7 +82,7 @@ text = "Options"
 margin_top = 352.0
 margin_right = 174.0
 margin_bottom = 398.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Quit"
 [connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_Continue_pressed"]
 [connection signal="pressed" from="VBoxContainer/NewGame" to="." method="_on_NewGame_pressed"]
