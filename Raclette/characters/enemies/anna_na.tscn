@@ -1,7 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://characters/enemies/Anna Na.gd" type="Script" id=1]
+[ext_resource path="res://characters/enemies/anna_na.gd" type="Script" id=1]
 [ext_resource path="res://characters/enemies/anna.png" type="Texture" id=2]
+
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 160.609
